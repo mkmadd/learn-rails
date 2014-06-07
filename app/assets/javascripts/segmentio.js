@@ -36,7 +36,7 @@ window.analytics.load = function(apiKey) {
     'd2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/' + apiKey + '/analytics.min.js';
   
   // Find the first script element on the page and insert our script next to it.
-  var firstScript = document.getElementByTagName('script')[0];
+  var firstScript = document.getElementsByTagName('script')[0];
   firstScript.parentNode.insertBefore(script, firstScript);
 };
 
